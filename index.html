@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("https://wallpapercave.com/wp/wp9389330.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        .solar-system {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            transform: perspective(1000px) rotateX(60deg) rotateZ(45deg);
+        }
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+          
+            background-color: orangered;
+            border-radius: 50%;
+            box-shadow: 0 0 20px yellow;
+        }
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform-origin: center;
+        }
+        .planet {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            border-radius: 50%;
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .mercury-orbit {
+            width: 120px;
+            height: 120px;
+            margin-top: -60px;
+            margin-left: -60px;
+            animation: rotate 10s linear infinite;
+        }
+        .mercury {
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            transform: translate(-50%, -60px);
+        }
+        .venus-orbit {
+            width: 180px;
+            height: 180px;
+            margin-top: -90px;
+            margin-left: -90px;
+            animation: rotate 20s linear infinite;
+        }
+        .venus {
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            transform: translate(-50%, -90px);
+        }
+        .earth-orbit {
+            width: 240px;
+            height: 240px;
+            margin-top: -120px;
+            margin-left: -120px;
+            animation: rotate 30s linear infinite;
+        }
+        .earth {
+            width: 22px;
+            height: 22px;
+            background-color: blue;
+            transform: translate(-50%, -120px);
+        }
+        .mars-orbit {
+            width: 300px;
+            height: 300px;
+            margin-top: -150px;
+            margin-left: -150px;
+            animation: rotate 40s linear infinite;
+        }
+        .mars {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            transform: translate(-50%, -150px);
+        }
+        .jupiter-orbit {
+            width: 360px;
+            height: 360px;
+            margin-top: -180px;
+            margin-left: -180px;
+            animation: rotate 50s linear infinite;
+        }
+        .jupiter {
+            width: 35px;
+            height: 35px;
+            background-color: brown;
+            transform: translate(-50%, -180px);
+        }
+        .saturn-orbit {
+            width: 420px;
+            height: 420px;
+            margin-top: -210px;
+            margin-left: -210px;
+            animation: rotate 60s linear infinite;
+        }
+        .saturn {
+            width: 30px;
+            height: 30px;
+            background-color: gold;
+            transform: translate(-50%, -210px);
+        }
+        .uranus-orbit {
+            width: 480px;
+            height: 480px;
+            margin-top: -240px;
+            margin-left: -240px;
+            animation: rotate 70s linear infinite;
+        }
+        .uranus {
+            width: 25px;
+            height: 25px;
+            background-color: lightblue;
+            transform: translate(-50%, -240px);
+        }
+        .neptune-orbit {
+            width: 540px;
+            height: 540px;
+            margin-top: -270px;
+            margin-left: -270px;
+            animation: rotate 80s linear infinite;
+        }
+        .neptune {
+            width: 25px;
+            height: 25px;
+            background-color: blue;
+            transform: translate(-50%, -270px);
+        }
+    </style>
+</head>
+<body>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury"></div>
+        </div>
+        <div class="orbit venus-orbit">
+            <div class="planet venus"></div>
+        </div>
+        <div class="orbit earth-orbit">
+            <div class="planet earth"></div>
+        </div>
+        <div class="orbit mars-orbit">
+            <div class="planet mars"></div>
+        </div>
+        <div class="orbit jupiter-orbit">
+            <div class="planet jupiter"></div>
+        </div>
+        <div class="orbit saturn-orbit">
+            <div class="planet saturn"></div>
+        </div>
+        <div class="orbit uranus-orbit">
+            <div class="planet uranus"></div>
+        </div>
+        <div class="orbit neptune-orbit">
+            <div class="planet neptune"></div>
+        </div>
+    </div>
+
+    
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66ad27a11601a2195ba023aa/1i4a65khr';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
